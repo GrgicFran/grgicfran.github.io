@@ -160,6 +160,10 @@ hr {
     margin: 10px;
 }
 
+#WomenTranslator{
+    background-color: #d1aa23;
+}
+
 @media only screen and (max-width: 1000px) {
     .no-mobile {
         display:none;
