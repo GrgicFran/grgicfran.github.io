@@ -1,0 +1,167 @@
+body,
+article,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOutHalf {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes darkToLightBlue {
+    from {
+        background-color: #071121;
+    }
+    to {
+        background-color: #0d1d39;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#top_container {
+    max-width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(pics/brinkbg.png) no-repeat center center fixed;
+    background-color: #0d1d39;
+    background-size: cover;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+
+    /* animation: darkToLightBlue 1s; */
+    
+}
+
+#picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 1;
+    background: url(pics/1.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    animation-name: fadeIn;
+    animation-direction: 1s;
+}
+
+#title {
+    align-self: center;
+    font-size: 4em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#instruction {
+    align-self: center;
+    margin-top: 10px;
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    animation: fadeInOutHalf 5s infinite;
+}
+
+.project {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    align-content: center;
+    justify-content: center;
+    background-color: #22376a;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+}
+
+.projectTitle {
+    align-self: center;
+    font-size: 4em;
+    color: white;
+}
+
+.projectDescription {
+    align-self: center;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    width: 70vw;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.project * {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projectPhotos * {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projectPhotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.project img {
+    height: 50vh;
+    width: auto;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .no-mobile {
+        display:none;
+    }
+}
