@@ -178,8 +178,10 @@ hr {
 }
 
 .footer {
+    padding: 0px;
     height: 20vh;
     width: 100vw;
+    max-width: 100%;
     background: #3e2d20;
     display: flex;
     flex-direction: column;
