@@ -75,7 +75,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background: url(pics/landing.jpg) no-repeat center center fixed;
+    background: url(pics/translatorbg.png) no-repeat center center fixed;
     background-color: #0d1d39;
     background-size: cover;
     overflow: hidden;
