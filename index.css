@@ -200,18 +200,25 @@ hr {
     align-self: center;
 }
 
-#WomenTranslator {
+#Libraries {
     background-color: #d1aa23 !important;
 }
 
-@media only screen and (max-width: 1000px) {
+#WomenTranslator{
+}
+
+@media only screen and (max-width: 720px) {
     .no-mobile {
         display: none;
     }
-    #WomenTranslator .projectTitle {
+    #Libraries .projectTitle {
         font-size: 3em;
     }
-    #WomenTranslator img {
+    #Libraries img {
         content: url("pics/povijestKnjiznicaMobile.png");
+    }
+
+    #WomenTranslator .projectTitle{
+        font-size: 3em;
     }
 }
