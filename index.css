@@ -207,7 +207,17 @@ hr {
 #WomenTranslator{
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
+    #picture{
+        width:200px;
+        height:200px;
+        margin-bottom: 0px;
+    }
+
+    .projectPhotos{
+
+    }
+
     .no-mobile {
         display: none;
     }
