@@ -184,6 +184,9 @@ hr {
     box-shadow: rgba(0,0,0,0);
 }
 
+.project a {
+    align-self: center;
+}
 #githubButton {
     box-shadow: rgb(28, 27, 24) 0px 5px 14px 0px;
     background: #e3e1ca;
@@ -194,6 +197,24 @@ hr {
     font-size: 18px;
     font-weight: bold;
     padding: 16px 33px;
+    text-decoration: none; 
+
+    text-align: center;
+    align-self: center;
+}
+
+#womenTranslatorDownloadButton{
+    box-shadow: rgba(28, 27, 24, .5) 0px 5px 14px 0px;
+    background: #77ba74;
+    /* border: 7px double white; */
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px 66px;
     text-decoration: none; 
 
     text-align: center;
