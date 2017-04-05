@@ -17,6 +17,10 @@ div {
 
 @import url('https://fonts.googleapis.com/css?family=Roboto;400');
 
+@keyframes blurIn{
+    from {filter: blur(5px)} to {filter: none}
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -67,9 +71,10 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background: url(pics/brinkbg.png) no-repeat center center fixed;
+    background: url(pics/landing.jpg) no-repeat center center fixed;
     background-color: #0d1d39;
     background-size: cover;
+    overflow: hidden;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     /* animation: darkToLightBlue 1s; */
 }
@@ -86,6 +91,8 @@ body {
     animation-name: fadeIn;
     animation-direction: 1s;
     margin-bottom: 50px;
+
+    /*animation: blurIn 3s;*/
 }
 
 #title {
