@@ -16,9 +16,13 @@ div {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto;400');
-
-@keyframes blurIn{
-    from {filter: blur(5px)} to {filter: none}
+@keyframes blurIn {
+    from {
+        filter: blur(5px)
+    }
+    to {
+        filter: none
+    }
 }
 
 @keyframes fadeIn {
@@ -91,7 +95,6 @@ body {
     animation-name: fadeIn;
     animation-direction: 1s;
     margin-bottom: 50px;
-
     /*animation: blurIn 3s;*/
 }
 
@@ -115,7 +118,8 @@ body {
 .project {
     max-width: 100%;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     color: black;
     align-content: center;
     justify-content: center;
@@ -147,6 +151,8 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
+
+
 /*
 .project * {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -171,22 +177,30 @@ hr {
     margin: 10px;
 }
 
-.footer{
+.footer {
     height: 20vh;
+    width: 100vw;
     background: #3e2d20;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.footer a{
+.footer a {
     align-self: center;
 }
 
-.footer *{
-    box-shadow: rgba(0,0,0,0);
+.footer * {
+    box-shadow: rgba(0, 0, 0, 0);
 }
 
 .project a {
     align-self: center;
 }
+
 #githubButton {
     box-shadow: rgb(28, 27, 24) 0px 5px 14px 0px;
     background: #e3e1ca;
@@ -197,13 +211,12 @@ hr {
     font-size: 18px;
     font-weight: bold;
     padding: 16px 33px;
-    text-decoration: none; 
-
+    text-decoration: none;
     text-align: center;
     align-self: center;
 }
 
-#womenTranslatorDownloadButton{
+#womenTranslatorDownloadButton {
     box-shadow: rgba(28, 27, 24, .5) 0px 5px 14px 0px;
     background: #77ba74;
     /* border: 7px double white; */
@@ -215,8 +228,7 @@ hr {
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px 66px;
-    text-decoration: none; 
-
+    text-decoration: none;
     text-align: center;
     align-self: center;
 }
@@ -225,20 +237,12 @@ hr {
     background-color: #d1aa23 !important;
 }
 
-#WomenTranslator{
-}
-
 @media only screen and (max-width: 1000px) {
-    #picture{
-        width:200px;
-        height:200px;
+    #picture {
+        width: 200px;
+        height: 200px;
         margin-bottom: 0px;
     }
-
-    .projectPhotos{
-
-    }
-
     .no-mobile {
         display: none;
     }
@@ -248,8 +252,34 @@ hr {
     #Libraries img {
         content: url("pics/povijestKnjiznicaMobile.png");
     }
-
-    #WomenTranslator .projectTitle{
+    #WomenTranslator .projectTitle {
         font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #picture {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px;
+    }
+    #title {
+        font-size: 2.5em;
+    }
+    #Brink .projectTitle {
+        font-size: 3em;
+    }
+    .no-mobile {
+        display: none;
+    }
+    #Libraries .projectTitle {
+        font-size: 2em;
+    }
+    #Libraries img {
+        content: url("pics/povijestKnjiznicaMobile.png");
+    }
+    #WomenTranslator .projectTitle {
+        font-size: 2em;
+        padding-top: 20px;
     }
 }
