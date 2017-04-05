@@ -82,12 +82,16 @@ body {
     align-self: center;
     animation-name: fadeIn;
     animation-direction: 1s;
+
+    margin-bottom: 50px;
 }
 
 #title {
     align-self: center;
     font-size: 4em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    margin-top:20px;
 }
 
 #instruction {
