@@ -173,6 +173,10 @@ hr {
     align-self: center;
 }
 
+.footer *{
+    box-shadow: rgba(0,0,0,0);
+}
+
 #githubButton {
     box-shadow: rgb(28, 27, 24) 0px 5px 14px 0px;
     background: #e3e1ca;
@@ -183,8 +187,7 @@ hr {
     font-size: 18px;
     font-weight: bold;
     padding: 16px 33px;
-    text-decoration: none;
-    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    text-decoration: none; 
 
     text-align: center;
     align-self: center;
