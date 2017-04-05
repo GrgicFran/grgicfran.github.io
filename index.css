@@ -191,6 +191,10 @@ hr {
     align-content: center;
 }
 
+.fa-arrow-circle-down{
+    color:white;
+}
+
 .footer a {
     align-self: center;
 }
